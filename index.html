@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majlis Ta'lim Manbaul Huda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('image/majelisbambu.jpeg') center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-text {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 3s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f0e68c;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .card {
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Majlis Ta'lim Manbaul Huda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Selamat datang di Majlis Ta'lim Manbaul Huda</h1>
+            <p>Pendidikan berbasis agama untuk generasi yang lebih baik</p>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="section-title text-center">Tentang Majlis Ta'lim Manbaul Huda</h2>
+        <p class="text-center">Majelis Ta'lim Manbaul Huda adalah Majlis yang awalnya dibangun dengan bahan bambu kini
+            telah mengalami transformasi signifikan. Terletak di pedesaan yang asri dekat pegunungan, majlis ini
+            sebelumnya memberikan suasana alami dengan desain tradisional yang sederhana. Dengan atap bambu yang khas,
+            dinding dari anyaman bambu, dan lantai yang terbuat dari bahan alami, majlis ini menawarkan nuansa tenang
+            dan damai, sempurna untuk berkumpul bersama keluarga atau komunitas.
+
+            Namun, seiring berjalannya waktu, majlis ini telah diperbaiki dan direnovasi, menjadikannya lebih modern
+            namun tetap mempertahankan ciri khas kealamian. Bangunan yang lebih kokoh dengan struktur yang lebih kuat
+            kini menggantikan bambu, menggunakan bahan-bahan seperti kayu yang lebih tahan lama dan batu alam yang
+            menambah kesan elegan. Atap yang lebih modern dan ventilasi yang lebih baik membuat majlis ini nyaman untuk
+            digunakan sepanjang tahun.
+
+            Pemandangan pegunungan yang indah masih menjadi latar belakang utama majlis, menjadikannya tempat yang
+            sempurna untuk berkumpul, beristirahat, atau merayakan momen penting dalam kehidupan. Perubahan ini membawa
+            keseimbangan antara tradisi dan kenyamanan modern, sehingga majlis tersebut tidak hanya menjadi tempat
+            berkumpul yang nyaman, tetapi juga mencerminkan keindahan alam dan arsitektur yang lebih maju.</p>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="section-title text-center">Program Kami</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="image/logo.jpeg" class="card-img-top" alt="Program 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Program Tahfidz</h5>
+                        <p class="card-text">Program penghafalan Al-Quran untuk membentuk santri yang mampu menghafal
+                            dan memahami kitab suci Al-Quran.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="image/logo.jpeg" class="card-img-top" alt="Program 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Program Pendidikan Agama</h5>
+                        <p class="card-text">Mempelajari berbagai ilmu agama Islam seperti Fiqih, Tafsir, Hadits, dan
+                            lainnya...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="image/logo.jpeg" class="card-img-top" alt="Program 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Program Pengembangan Karakter</h5>
+                        <p class="card-text">Mengajarkan nilai-nilai moral dan etika untuk membentuk santri yang
+                            memiliki karakter...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Majlis Ta'lim Manbaul Huda. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
